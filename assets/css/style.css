@@ -430,7 +430,7 @@ body.nav-active { overflow: hidden; }
   width: 100%;
   height: 100vh;
   padding: 30px;
-  padding-block-end: 67px;
+  padding-block-end: 70px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -3497,6 +3497,7 @@ width: 80%;
 
 
   
+
 
 
 
