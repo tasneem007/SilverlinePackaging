@@ -1239,7 +1239,7 @@ transform: translateX(calc(-300px * 7));
   .stats-card.has-bg-image {
     background-size: contain;   /* fit image inside container */
     background-position: top;   /* adjust position for smaller screens */
-    padding: 15px;
+    padding: 35px;
     background-size: cover;       /* ensures image covers the area */
   background-position: center;  /* keeps image centered */
   background-repeat: no-repeat; /* prevents tiling */
@@ -3508,6 +3508,7 @@ width: 80%;
 
 
   
+
 
 
 
