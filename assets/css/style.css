@@ -1237,7 +1237,7 @@ transform: translateX(calc(-300px * 7));
 /* Mobile adjustments */
 @media (max-width: 768px) {
   .stats-card.has-bg-image {
-    background-size: contain;   /* fit image inside container */
+   /*  background-size: contain;   fit image inside container */
     background-position: top;   /* adjust position for smaller screens */
     padding: 5px;
     background-size: cover;       /* ensures image covers the area */
@@ -3508,6 +3508,7 @@ width: 80%;
 
 
   
+
 
 
 
