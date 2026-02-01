@@ -1403,7 +1403,8 @@ transform: translateX(calc(-300px * 7));
 }
 
 
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 768px) {
 
 
   .headerss{
@@ -1412,10 +1413,12 @@ transform: translateX(calc(-300px * 7));
   .faq{
     color: #000b84;
     float: left;
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: center;
+    padding-bottom: 15px;
   }
 }
+
 /*------------PRODUCTS----------------*/
 
 
@@ -3508,6 +3511,7 @@ width: 80%;
 
 
   
+
 
 
 
