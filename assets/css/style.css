@@ -1239,7 +1239,7 @@ transform: translateX(calc(-300px * 7));
   .stats-card.has-bg-image {
     background-size: contain;   /* fit image inside container */
     background-position: top;   /* adjust position for smaller screens */
-    padding: 35px;
+    padding: 50px;
     background-size: cover;       /* ensures image covers the area */
   background-position: center;  /* keeps image centered */
   background-repeat: no-repeat; /* prevents tiling */
@@ -1254,7 +1254,7 @@ transform: translateX(calc(-300px * 7));
   }
 
   .stats-card .h1 {
-    font-size: 1.5rem;          /* smaller text size for phones */
+    font-size: 1.2rem;          /* smaller text size for phones */
   }
 }
 
@@ -3508,6 +3508,7 @@ width: 80%;
 
 
   
+
 
 
 
