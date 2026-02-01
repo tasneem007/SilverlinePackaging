@@ -1224,10 +1224,15 @@ transform: translateX(calc(-300px * 7));
   background-position: center;  /* keeps image centered */
   background-repeat: no-repeat; /* prevents tiling */
   border-radius: 8px;           /* optional, for rounded corners */
-  padding: 20px;  
+  padding-left: 20px;  
+  padding-top: 30px;
+  padding-bottom: 30px;
   border-radius: var(--radius-8);              /* spacing inside */
    text-align: center;
+   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
+
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
@@ -3497,6 +3502,7 @@ width: 80%;
 
 
   
+
 
 
 
