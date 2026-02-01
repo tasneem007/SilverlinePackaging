@@ -1240,6 +1240,12 @@ transform: translateX(calc(-300px * 7));
     background-size: contain;   /* fit image inside container */
     background-position: top;   /* adjust position for smaller screens */
     padding: 15px;
+    background-size: cover;       /* ensures image covers the area */
+  background-position: center;  /* keeps image centered */
+  background-repeat: no-repeat; /* prevents tiling */
+  border-radius: 8px;           /* optional, for rounded corners */
+  border-radius: var(--radius-8);              /* spacing inside */
+   text-align: center;
   }
 
   .stats-card li {
@@ -3502,6 +3508,7 @@ width: 80%;
 
 
   
+
 
 
 
