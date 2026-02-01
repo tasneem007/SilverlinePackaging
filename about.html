@@ -184,6 +184,14 @@ window.addEventListener("scroll", function () {
     header.classList.remove("active");
   }
 });
+
+  const navToggler = document.querySelector("[data-nav-toggler]");
+const sidebar = document.getElementById("sidebar");
+
+navToggler.addEventListener("click", () => {
+  sidebar.classList.toggle("active");
+});
+
     </script>
 
 
@@ -722,6 +730,7 @@ we have gained a huge client base in the overall Global Market.
 </body>
 
 </html>
+
 
 
 
