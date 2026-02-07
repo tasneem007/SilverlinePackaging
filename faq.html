@@ -30,7 +30,7 @@
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
-
+<script src="./assets/js/script.js"></script>
 
   <!-- 
     - preload images
@@ -101,7 +101,7 @@ function scrollToTop(){
           </li>
 
           <li>
-            <a href="contactus.html" class="navbar-link2">Contact Us</a>
+            <a href="contactus.html" class="navbar-link2">Contactus</a>
           </li>
 
         </ul>
@@ -156,7 +156,7 @@ function scrollToTop(){
 
       </nav>
 
-      <a href="contactus.html" class="btn btn-primary"><u>Get Quote</u></a>
+      <a href="contactus.html" class="btn btn-primary">Get Quote</a>
 
       <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
         <img src="./assets/images/menuoutline.png" alt="menu-icon" width="35" height="35"> 
@@ -167,8 +167,7 @@ function scrollToTop(){
     </div>
   </header>
 
-  
-<main>
+  <main>
     <article>
         <section class="section project" aria-labelledby="project-label">
             <div class="container">
@@ -401,16 +400,24 @@ function scrollToTop(){
   });
 </script>
 
-<style> .faq { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; font-size: 2rem; font-weight: 400; color: #0c0475; margin-top: 20px; padding: 20px; } .btn-wrapper { margin-top: 15px; } .btn { display: inline-flex; align-items: center; justify-content: center; background-color: rgb(192, 4, 4); color: azure; text-decoration: none; height: 60px; width: 180px; border-radius: 8px; font-size: 1rem; font-weight: 600; transition: background-color 0.3s ease; } .btn:hover { background-color: #a00303; } /* Responsive adjustments */ @media (max-width: 768px) { .faq { font-size: 1.5rem; } .btn { width: 150px; height: 50px; font-size: 0.9rem; } } @media (max-width: 480px) { .faq { font-size: 1.2rem; } .btn { width: 120px; height: 45px; font-size: 0.8rem; } } </style>
 
-<div class="faq"> HAVE SOMETHING NOT BEING ADDRESSED? <div class="btn-wrapper"> <a href="contactus.html" class="btn">CONTACT US</a> </div> </div>
-
-              
+<div class="faq" style="align-content: center;
+text-align: center;
+font-size: 2rem;
+font-weight: 400;
+color: #0c0475;
+justify-content: center;
+align-items: center;
+display: flex;
+margin-bottom: -40px;
+margin-top: 20px;">
+    HAVE SOMETING NOT BEING ADDRESSED?&nbsp;&nbsp;
+    <div class="btn-wrapper">
+    <a href="contactus.html" class="btn btn-primary" style="background-color: rgb(192, 4, 4); color: azure; align-items: center; text-align: center;  justify-content: center; height: 60px; width: 180px;">CONTACT US</a>
+  </div>
+</div><br><br>
 </div>
 </section>
-
-
-
 
 
 
@@ -638,11 +645,6 @@ function scrollToTop(){
 </body>
 
 </html>
-
-
-
-
-
 
 
 
