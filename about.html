@@ -194,6 +194,24 @@ we have gained a huge client base in the overall Global Market.
         - #ABOUT
       -->
 
+      <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const accordions = document.querySelectorAll("[data-accordion]");
+
+    accordions.forEach(card => {
+      const btn = card.querySelector("[data-accordion-btn]");
+      btn.addEventListener("click", () => {
+        // Close other accordions if you want only one open at a time
+        accordions.forEach(acc => {
+          if (acc !== card) acc.classList.remove("expanded");
+        });
+        // Toggle current accordion
+        card.classList.toggle("expanded");
+      });
+    });
+  });
+</script>
+
       <section class="about" aria-labelledby="about-label">
         <div class="container">
 
@@ -685,6 +703,7 @@ we have gained a huge client base in the overall Global Market.
 </body>
 
 </html>
+
 
 
 
