@@ -30,6 +30,7 @@
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./assets/js/script.js"></script>
 
   <!-- 
     - preload images
@@ -403,8 +404,14 @@ function scrollToTop(){
   });
 </script>
 
-
-
+<style> .faq { display: flex; justify-content: center; align-items: center; text-align: center; font-size: 2rem; font-weight: 400; color: #0c0475; margin-top: 20px; gap: 20px; /* space between text and button */ flex-wrap: wrap; /* allows wrapping on small screens */ padding: 10px; } 
+  .btn { display: inline-flex; align-items: center; justify-content: center; background-color: rgb(192, 4, 4); color: azure; text-decoration: none; height: 60px; width: 180px; border-radius: 8px; font-size: 1rem; font-weight: 600; transition: background-color 0.3s ease; }
+  .btn:hover { background-color: #a00303; } /* Responsive adjustments */
+  @media (max-width: 768px) { .faq { font-size: 1.5rem; } 
+.btn { width: 150px; height: 50px; font-size: 0.9rem; } } 
+  @media (max-width: 480px) { .faq { flex-direction: column; /* stack text and button */ font-size: 1.2rem; } 
+                             .btn { width: 100%; /* full width button on mobile */ height: 45px; font-size: 0.9rem; } } </style>
+<div class="faq"> <span>HAVE SOMETHING NOT BEING ADDRESSED?</span> <a href="contactus.html" class="btn">CONTACT US</a> </div>
 
 
 <br><br>
@@ -637,3 +644,4 @@ function scrollToTop(){
 </body>
 
 </html>
+
