@@ -151,50 +151,6 @@
 
       <div class="overlay" data-nav-toggler data-overlay></div>
 
-<script>
-/**
- * NAVBAR TOGGLE FOR MOBILE
- */
-
-const navbar = document.querySelector("[data-navbar]");
-const navTogglers = document.querySelectorAll("[data-nav-toggler]");
-const overlay = document.querySelector("[data-overlay]");
-
-const toggleNavbar = function () {
-  navbar.classList.toggle("active");
-  overlay.classList.toggle("active");
-  document.body.classList.toggle("nav-active");
-}
-
-addEventOnElements(navTogglers, "click", toggleNavbar);
-
-
-
-/**
- * HEADER
- * active header when window scroll down to 100px
- */
-
-const header = document.querySelector("[data-header]");
-
-window.addEventListener("scroll", function () {
-  if (window.scrollY > 100) {
-    header.classList.add("active");
-  } else {
-    header.classList.remove("active");
-  }
-});
-
-  const navToggler = document.querySelector("[data-nav-toggler]");
-const sidebar = document.getElementById("sidebar");
-
-navToggler.addEventListener("click", () => {
-  sidebar.classList.toggle("active");
-});
-
-    </script>
-
-
 
       
     </div>
@@ -314,6 +270,28 @@ we have gained a huge client base in the overall Global Market.
 
           </div>
 
+ <script>
+  // Select all accordion buttons
+  const accordionButtons = document.querySelectorAll("[data-accordion-btn]");
+
+  accordionButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const accordionCard = button.closest("[data-accordion]");
+
+      // If you want only one open at a time:
+      document.querySelectorAll("[data-accordion]").forEach(card => {
+        if (card !== accordionCard) {
+          card.classList.remove("expanded");
+        }
+      });
+
+      // Toggle the clicked accordion
+      accordionCard.classList.toggle("expanded");
+    });
+  });
+</script>
+         
+          
         </div>
       </section>
 
@@ -730,6 +708,7 @@ we have gained a huge client base in the overall Global Market.
 </body>
 
 </html>
+
 
 
 
